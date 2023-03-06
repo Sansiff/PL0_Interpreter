@@ -14,10 +14,7 @@ public:
     int get_colume(){ return colume; }
     void move_line(){ line += 1; }
     int get_line(){ return line; }
- 
-    std::string to_string() const{ 
-        return std::to_string(line) + ':' + std::to_string(colume) + "  "; 
-    }
+    void set_colume() { colume = 1; }
 };
 
 #endif

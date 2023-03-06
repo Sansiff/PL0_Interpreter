@@ -15,5 +15,5 @@ int Token::match(std::string s){
 }
 
 std::string Token::to_string(){
-    return loc.to_string() + "  " + key;
+    return std::to_string(loc.get_line()) + ":" + std::to_string(loc.get_colume() - key.size()) + "  " + key; 
 }

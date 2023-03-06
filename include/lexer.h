@@ -11,9 +11,8 @@ private:
     Token token;
     std::string now_str;
     std::string line_str;
-    int now_type; // 0:字母， 1:数字
 public:
-    Lexer() : loc(0), now_type(0), now_str(""){ }
+    Lexer() : loc(0), now_str(""){ }
     void get_token();
     std::vector<Token> lex();
 };
