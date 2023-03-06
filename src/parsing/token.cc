@@ -14,7 +14,12 @@ int Token::match(std::string s){
     return keytonum[s];
 }
 
+int Token::get_key_number(std::string s){
+    return keytonum[s];
+}
+
 
 std::string Token::to_string(){
-    return std::to_string(loc.get_line()) + ":" + std::to_string(loc.get_colume() - key.size()) + "\t" + key; 
+    return std::to_string(loc.get_line()) + ":" + std::to_string(loc.get_colume() - key.size())
+    + "\t" + key + "\t" + std::to_string(Token::get_key_number(key)); 
 }

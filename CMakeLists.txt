@@ -12,5 +12,5 @@ endif()
 project(PL0_Interpreter VERSION 0.0.1 LANGUAGES C CXX)
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
-
+include_directories(${PROJECT_SOURCE_DIR}/include/parsing)
 add_subdirectory(./src)

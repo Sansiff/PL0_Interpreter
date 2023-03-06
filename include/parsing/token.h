@@ -14,7 +14,7 @@ private:
     std::string key;
 public:
     Token(){ }
-    int get_key_number(std::string s){ return keytonum[s]; }
+    static int get_key_number(std::string s);
     void set_loc(Location _loc){ loc = _loc; }
     void set_key(std::string _key){ key = _key; }
     static void init();

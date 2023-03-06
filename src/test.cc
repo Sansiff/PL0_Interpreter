@@ -7,7 +7,7 @@
 
 
 int main(){
-    Lexer lexer;
+    Lexer lexer; Token::init();
     std::vector<Token> tokens = lexer.lex();
     std::cout << "tokens size = " << tokens.size() << std::endl;
     for(Token token : tokens){
