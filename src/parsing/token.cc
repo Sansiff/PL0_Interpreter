@@ -1,4 +1,4 @@
-#include "token.h"
+#include "parsing/token.h"
 
 std::vector<std::string> Token::keys = {
     "begin", "end", "if", "then", "while", "do", "const", "var","call", "procedure", 

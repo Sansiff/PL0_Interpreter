@@ -2,7 +2,7 @@
 #define LEXER_H
 
 #include "util.h"
-#include "token.h"
+#include "parsing/token.h"
 
 class Lexer{
 private:
